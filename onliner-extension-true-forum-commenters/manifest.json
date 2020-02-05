@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Onliner cool extension show only comments hide text of the ",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.onliner.by/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
