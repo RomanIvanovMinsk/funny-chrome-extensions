@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Onliner cool extension for treacking price change ",
+  "version": "0.1",
+  "background": {
+    "scripts": ["background.js"],
+    "persistance": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://catalog.onliner.by/*"
+      ],
+      "js": ["d3.min.js", "nv.d3.js", "content.js"],
+      "css": [ "nv.d3.css" ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
+   ]
+}
